@@ -4,8 +4,9 @@ const config = require('./config');
 
 const event = EventTracking();
 
-const createCircuitBreaker = () => {   /*createCircuitBreaker function returns an object with a healthcheck 
-                                       method that is used to check the health status of an external service.*/
+const createCircuitBreaker = () => {   
+    /*createCircuitBreaker function returns an object with a healthcheck 
+    method that is used to check the health status of an external service.*/
     let consecutiveFailedCalls = 0;
     let totalCalls = 0;
 
